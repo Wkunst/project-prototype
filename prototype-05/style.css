@@ -46,7 +46,14 @@ a {
     color: white;
 }
 
+/*
+TYPOGRAPHY
+*/
 
+h1 {
+    font-size: 144px;
+    
+}
 
 
 @media only screen and (min-width: 600px) {}
