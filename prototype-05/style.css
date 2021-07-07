@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
 
 
 * {
@@ -25,12 +26,12 @@ a {
     position: absolute;
     width: 200px;
     height: 200px;
-        background: rgba(255, 0, 0, 0.4);
+/*        background: rgba(255, 0, 0, 0.4);*/
 
 }
 
 .area{
-   background: rgba(0, 255, 0, 0.4); 
+/*   background: rgba(0, 255, 0, 0.4); */
     
 }
 
@@ -51,6 +52,7 @@ TYPOGRAPHY
 */
 
 h1 {
+    font-family: 'Rajdhani', sans-serif;
     font-size: 144px;
     
 }
