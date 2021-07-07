@@ -20,12 +20,18 @@ a {
     font-size: 24px;
 }
 
+.area,
 .buttons {
     position: absolute;
     width: 200px;
     height: 200px;
-    /*    background: rgba(255, 0, 0, 0.4);*/
+        background: rgba(255, 0, 0, 0.4);
 
+}
+
+.area{
+   background: rgba(0, 255, 0, 0.4); 
+    
 }
 
 .buttons a {
@@ -35,7 +41,7 @@ a {
     color: rgba(255, 255, 255, 0.8);
     font-weight: 400;
 }
-
+.area,
 .buttons a:hover {
     color: white;
 }
