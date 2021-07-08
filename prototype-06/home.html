@@ -12,10 +12,40 @@
             background-image: url(../screens/210614-will-mobile-Welcome.jpg);
         }
 
+        header,
+        #area-01 {
+            display: none;
+        }
+
+
         @media only screen and (min-width: 600px) {
 
             body {
                 background-image: url(../screens/210707-will-kunstweb-welcome.jpg);
+            }
+
+            header,
+            #area-01 {
+                display: block;
+            }
+
+            #mobile-menu {
+                display: none;
+            }
+
+            /*
+            Home/Welcome/Info Wrapper
+            */
+
+            #wrapper-01 {
+                position: absolute;
+                height: 80px;
+                width: 320px;
+                overflow-y: hidden;
+            }
+
+            #wrapper-01:hover {
+                height: 300px;
             }
 
 
@@ -36,11 +66,12 @@
             #button-01 a {
                 color: rgba(255, 255, 255, 0.5);
             }
+
             #button-01 a:hover {
                 color: rgba(255, 255, 255, 0.9);
             }
-            
-            
+
+
             #button-bckg-01 {
                 width: 320px;
                 height: 80px;
@@ -66,16 +97,16 @@
                 padding-top: 7px;
                 z-index: 100;
             }
-           
+
             #button-02 a {
                 color: rgba(255, 255, 255, 0.5);
             }
-            
+
             #button-02 a:hover {
                 color: rgba(255, 255, 255, 0.9);
             }
-            
-            
+
+
             #button-bckg-02 {
                 width: 320px;
                 height: 45px;
@@ -86,10 +117,10 @@
                 padding-left: 232px;
                 padding-left: 203px;
                 padding-top: 7px;
-                
+
             }
-            
-            
+
+
             /*
             Info Button
             */
@@ -108,13 +139,13 @@
             #button-03 a {
                 color: rgba(255, 255, 255, 0.5);
             }
-            
+
             #button-03 a:hover {
                 color: rgba(255, 255, 255, 0.9);
             }
-            
-            
-            
+
+
+
             #button-bckg-03 {
                 width: 320px;
                 height: 45px;
@@ -124,10 +155,10 @@
                 mix-blend-mode: multiply;
                 padding-left: 249px;
                 padding-top: 5px;
-                
+
             }
-            
-            
+
+
             /*
             About Button
             */
@@ -145,6 +176,7 @@
             #button-04 a {
                 color: rgba(255, 255, 255, 0.5);
             }
+
             #button-04 a:hover {
                 color: rgba(255, 255, 255, 0.9);
             }
@@ -175,15 +207,16 @@
                 z-index: 100;
 
             }
-              #button-05 a {
-                  color: rgba(255, 255, 255, 0.5);
+
+            #button-05 a {
+                color: rgba(255, 255, 255, 0.5);
             }
-       
+
             #button-05 a:hover {
                 color: rgba(255, 255, 255, 0.9);
             }
-            
-            
+
+
             #button-bckg-05 {
                 width: 320px;
                 height: 80px;
@@ -193,10 +226,10 @@
                 mix-blend-mode: multiply;
                 padding-left: 195px;
                 padding-top: 34px;
-                
+
             }
-            
-            
+
+
             /*
             Media Button
             */
@@ -210,11 +243,11 @@
                 padding-top: 34px;
                 z-index: 100;
             }
-            
+
             #button-06 a {
                 color: rgba(255, 255, 255, 0.5);
             }
-           
+
             #button-06 a:hover {
                 color: rgba(255, 255, 255, 0.9);
             }
@@ -228,11 +261,11 @@
                 mix-blend-mode: multiply;
                 padding-left: 225px;
                 padding-top: 34px;
-                
+
             }
-            
-            
-            
+
+
+
             /*
             Shop Button
             */
@@ -247,15 +280,15 @@
             }
 
             #button-07 a {
-                  color: rgba(255, 255, 255, 0.5);
+                color: rgba(255, 255, 255, 0.5);
             }
-            
+
             #button-07 a:hover {
                 color: rgba(255, 255, 255, 0.9);
             }
-            
-            
-            
+
+
+
             #button-bckg-07 {
                 width: 320px;
                 height: 80px;
@@ -265,11 +298,11 @@
                 mix-blend-mode: multiply;
                 padding-left: 235px;
                 padding-top: 34px;
-                
+
             }
-            
-            
-            
+
+
+
             /*
             Contact Button
             */
@@ -282,7 +315,7 @@
                 padding-top: 34px;
                 z-index: 100
             }
-            
+
             #button-08 a {
                 color: rgba(255, 255, 255, 0.5);
             }
@@ -290,9 +323,9 @@
             #button-08 a:hover {
                 color: rgba(255, 255, 255, 0.9);
             }
-            
-            
-            #button-bckg-08 { 
+
+
+            #button-bckg-08 {
                 width: 320px;
                 height: 80px;
                 left: 1600px;
@@ -301,14 +334,14 @@
                 mix-blend-mode: multiply;
                 padding-left: 225px;
                 padding-top: 34px;
-                
+
             }
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
             #area-01 {
                 width: 550px;
                 left: 700px;
@@ -326,31 +359,35 @@
 
     <header>
 
-        <!--Home button-->
-        <div id="button-01" class="buttons">
-            <a href="#">Home</a>
+
+        <div id="wrapper-01" class="wrapper">
+
+            <!--Home button-->
+            <div id="button-01" class="buttons">
+                <a href="#">Home</a>
+            </div>
+
+            <div id="button-bckg-01" class="button-bckg"></div>
+
+
+            <!--Welcome button-->
+            <div id="button-02" class="buttons">
+                <a href="#">Welcome</a>
+            </div>
+
+            <div id="button-bckg-02" class="button-bckg"></div>
+
+
+            <!--Info button-->
+            <div id="button-03" class="buttons">
+                <a href="info.html">Info</a>
+            </div>
+
+            <div id="button-bckg-03" class="button-bckg"></div>
+
         </div>
 
-        <div id="button-bckg-01" class="button-bckg"></div>
 
-        
-        <!--Welcome button-->
-        <div id="button-02" class="buttons">
-            <a href="#">Welcome</a>
-        </div>
-        
-        <div id="button-bckg-02" class="button-bckg"></div>
-
-        
-        <!--Info button-->
-        <div id="button-03" class="buttons">
-            <a href="info.html">Info</a>
-        </div>
-        
-        <div id="button-bckg-03" class="button-bckg"></div>
-        
-
-        
         <!--About button-->
         <div id="button-04" class="buttons">
             <a href="#">About</a>
@@ -358,7 +395,7 @@
 
         <div id="button-bckg-04" class="button-bckg"></div>
 
-        
+
         <!--Leitmotiv button-->
         <div id="button-05" class="buttons">
             <a href="#">Leitmotiv</a>
@@ -366,7 +403,7 @@
 
         <div id="button-bckg-05" class="button-bckg"></div>
 
-        
+
         <!--Media button-->
         <div id="button-06" class="buttons">
             <a href="#">Media</a>
@@ -374,7 +411,7 @@
 
         <div id="button-bckg-06" class="button-bckg"></div>
 
-        
+
         <!--Shop button-->
         <div id="button-07" class="buttons">
             <a href="#">Shop</a>
@@ -382,7 +419,7 @@
 
         <div id="button-bckg-07" class="button-bckg"></div>
 
-        
+
         <!--Contact button-->
         <div id="button-08" class="buttons">
             <a href="#">Contact</a>
@@ -402,11 +439,13 @@
             <h1>welcome</h1>
         </div>
 
+        <!--mobile-menu-->
+        <div id="mobile-menu" class="area">
+            mobile menu
+        </div>
+
     </main>
 
 
 
-</body>
-
-
-</html>
+</body></html>
